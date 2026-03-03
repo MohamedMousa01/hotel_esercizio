@@ -41,7 +41,7 @@ public class Hotel {
 
     public double calcolaConto(Stanza input){
         double totSum = 0;
-
+        if(!(this.stanze.contains(input))){return -1;}
         for(Cliente c : input.getClienti()){
             totSum = totSum + c.sommaRealeDaPagare();
         }
