@@ -3,13 +3,17 @@ package it.prova.models;
 
 public class Rappresentante extends Cliente {
 
-    public Rappresentante(String nome, String cognome){
+    private float sommaDaPagare;
+
+    public Rappresentante(String nome, String cognome, float sommaDaPagare){
         super(nome, cognome);
+        this.sommaDaPagare = sommaDaPagare;
     }
 
-    public int sommaRealeDaPagare(){
+    public double sommaRealeDaPagare(){
 
-
+        double sum = 0.8 * sommaDaPagare;
+        return sum;
     }
 
 }

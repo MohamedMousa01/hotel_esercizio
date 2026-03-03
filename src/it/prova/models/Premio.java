@@ -6,7 +6,7 @@ public class Premio extends Cliente{
         super(nome, cognome);
     }
 
-    public int sommaRealeDaPagare(){
-
+    public double sommaRealeDaPagare(){
+        return 0;
     }
 }

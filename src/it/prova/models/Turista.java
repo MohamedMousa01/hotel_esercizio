@@ -2,11 +2,14 @@ package it.prova.models;
 
 public class Turista extends Cliente{
 
-    public Turista( String nome, String cognome){
+    private float sommaDaPagare;
+
+    public Turista( String nome, String cognome, float sommaDaPagare){
         super(nome, cognome);
+        this.sommaDaPagare = sommaDaPagare;
     }
 
-    public int sommaRealeDaPagare(){
-
+    public double sommaRealeDaPagare(){
+        return sommaDaPagare;
     }
 }

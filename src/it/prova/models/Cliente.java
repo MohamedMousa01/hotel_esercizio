@@ -10,6 +10,6 @@ public abstract class Cliente {
         this.cognome = cognome;
     }
 
-    public abstract int sommaRealeDaPagare();
+    public abstract double sommaRealeDaPagare();
 
 }
